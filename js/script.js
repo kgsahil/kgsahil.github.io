@@ -10,7 +10,7 @@ function emailSubmit(){
         xhr.addEventListener("error", showError);
         xhr.addEventListener("abort", showError);
         
-        xhr.open("POST", `API = https://elixr-backend.herokuapp.com/subscribe`, true);
+        xhr.open("POST", `https://elixr-backend.herokuapp.com/subscribe`, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify({
             email: email
