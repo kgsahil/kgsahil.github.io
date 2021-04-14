@@ -32,7 +32,19 @@
         <!-- mailchimp style -->
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <style type="text/css">
-        	#mc_embed_signup{background:rgb(189, 177, 177); clear:left; font:14px Helvetica,Arial,sans-serif; }
+        	#mc_embed_signup{
+                border-radius: 14px;
+                background: #fff;
+                clear: left;
+                box-shadow: 4px 3px 8px #d2d409;
+                font: 14px Helvetica,Arial,sans-serif; 
+                }
+            #mc_embed_signup .button:hover {
+                background-color: #c3c011;
+            }
+            #mc_embed_signup .button {
+                height:46px;
+            }
         	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
         	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
         </style>
@@ -252,7 +264,7 @@
 
 
                 <!-- mailchip form -->
-                <div id="mc_embed_signup">
+                <div class="form-block w-form" id="mc_embed_signup">
                     <form action="https://theelixr.us1.list-manage.com/subscribe/post?u=b224d4a5fbb29d81a069622ad&amp;id=e1828cc29d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
                         
